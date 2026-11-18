@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "schemagic") (type "KiCad") (uri "${KIPRJMOD}/schemagic.pretty") (options "") (descr "Datasheet-matched footprints from schemagic"))
+	(lib (name "XL6019E1") (type "KiCad") (uri "C:/Users/henry/OneDrive/Documents/LTspice/XL6019E1.pretty") (options "") (descr ""))
+)
