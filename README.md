@@ -1,5 +1,7 @@
 # XL6019-constant-current-laser-driver
 
+*V1.3 completed May 17th, 2026*
+
 A modified application of the XL6019, utilizing feedback from a low side shunt resistor for current controlled operation.
 
 ## Specifications
