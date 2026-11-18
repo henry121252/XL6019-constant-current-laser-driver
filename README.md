@@ -10,5 +10,6 @@ A modified application of the XL6019, utilizing feedback from a low side shunt r
 
 ## Architecture
 
+<img src="attachments/Screenshot 2026-11-17 231210.png" width="800" alt="Schematic diagram">
 
 ## Challenges
