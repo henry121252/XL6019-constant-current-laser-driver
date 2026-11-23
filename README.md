@@ -2,7 +2,7 @@
 
 *V1.3 completed May 17th, 2026*
 
-A modified application of the XL6019, utilizing feedback from a low side shunt resistor for current controlled operation.
+A modified application of the XL6019, utilizing feedback from a low side shunt resistor for current controlled operation, assembled on a home-etched PCB.
 
 <p>
   <img src="attachments/IMG_1166.jpeg" width="400" alt="Bottom layer of finished board">
@@ -29,6 +29,8 @@ A modified application of the XL6019, utilizing feedback from a low side shunt r
 ## Challenges
 
 <img src="attachments/IMG_1163.jpeg" width="600" alt="Versions of the board, starting with the unaltered application on the far right">
+
+* This was the first time I had etched PCBs myself, and it was quite difficult getting a working process for manufacturing clean boards. The process involves printing the board's top and bottom masks with a laser printer onto toner transfer paper, then heating it and applying pressure to transfer the mask onto a bare double sided PCB. This board is then immersed in ferric chloride and afterwards the toner mask is wiped away with acetone to reveal a finished PCB. The process allows for rapid prototyping on circuits not suitable for a breadboard such as this one.
 
 * Achieving stable feedback on a device that switches at 180kHz requires a carefully thought out feedback design. The network must be able to react fast enough to changes in the output current while preventing any oscillation in the feedback. A 10nF capacitor from the inverting input of the differential amplifier to its output acts as a low pass filter, lowering amplification of signals above ~482Hz. This drastically reduces the gain of higher frequencies, notably the switching frequency. Without this capacitor it is likely the circuit would oscillate.
    
