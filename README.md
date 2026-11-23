@@ -4,6 +4,11 @@
 
 A modified application of the XL6019, utilizing feedback from a low side shunt resistor for current controlled operation.
 
+<p>
+  <img src="attachments/IMG_1166.jpg" width="400" alt="Bottom layer of finished board">
+  <img src="attachments/IMG_1165.jpg" width="400" alt="Top layer of finished board">
+</p>
+
 ## Specifications
 
 * **Boost converter IC:** XL6019E1 in TO-263-5L
