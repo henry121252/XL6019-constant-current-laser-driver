@@ -28,6 +28,8 @@ A modified application of the XL6019, utilizing feedback from a low side shunt r
 
 ## Challenges
 
+<img src="attachments/IMG_1163.jpeg" width="600" alt="Versions of the board, starting with the unaltered application on the far right">
+
 * Achieving stable feedback on a device that switches at 180kHz requires a carefully thought out feedback design. The network must be able to react fast enough to changes in the output current while preventing any oscillation in the feedback. A 10nF capacitor from the inverting input of the differential amplifier to its output acts as a low pass filter, lowering amplification of signals above ~482Hz. This drastically reduces the gain of higher frequencies, notably the switching frequency. Without this capacitor it is likely the circuit would oscillate.
    
 * The device should be able to regulate voltage with one potentiometer, while seamlessly switching to constant-current regulation with another when the current limit is reached. This creates a natural priority in the signals, as the current regulation takes higher precedence than voltage regulation. This is achieved through a BAS16W diode. When the current sense signal at the emitter of the MMBT3904 is below 1.95V (XL6019 reference voltage + diode drop, the feedback voltage at the XL6019 is equal to the voltage divider feedback. When a current sense signal is present, the feedback voltage is pulled above the 1.25V reference through the diode and MMBT3904.
