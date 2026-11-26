@@ -1,4 +1,4 @@
-# XL6019-constant-current-laser-driver
+# XL6019 Constant Current Laser Driver
 
 *V1.3 completed May 17th, 2026*
 
